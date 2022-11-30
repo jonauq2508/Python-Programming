@@ -1,0 +1,33 @@
+print(" Encontrar el numero mayor, el menor y el promedio de un conjunto de almenos 10 numeros")
+print("****************************************************************")
+
+def solcitarValorUsuario( ):
+  i=0 #permite hacer el contador
+  num=0 #numeros ingresados y acciona el while
+  sum=0 #va a sumar los numeros
+  print("ingrese almenos 10 numeros > 0")
+  print(" ")
+  while num >= 0: #permite pedir numeros
+    num=float(input("Ingrese un numero: " )) #solicita numero flotante
+    
+    if num >= 0: #valida numeros >= a 0
+          sum=sum+num #sumatoria
+          i+=1 #contador
+          if i == 1:
+              mayor = menor = num
+          else:
+              if num > mayor: #encontrar numero mayor
+                  mayor = num
+              if num < menor: #encontrar numero menor
+                  menor = num
+  if i == 0:
+      print("")
+  else:
+      print("El numero mayor es: ",mayor)
+      print("El numero menor es: ",menor)
+      print("El promedio de los numeros ingresados  es de",sum/i) 
+
+  print("¡ El valor ingresado es incorrecto !")
+calculo = solcitarValorUsuario() #inicia el programa
+print("< < Fin del ejercicio  2 > > ")
+
