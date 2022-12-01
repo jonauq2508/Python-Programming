@@ -1,0 +1,9 @@
+print (" A continuacion se muestra los numeros impares contenidos entre 1 y 100")
+print("")
+
+contador = 1
+while (contador <= 100):
+  print(contador) 
+  contador += 2 
+
+print("< < Fin del ejercicio  1 > > ")
